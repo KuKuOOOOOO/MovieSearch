@@ -17,6 +17,7 @@ class MainForm(wx.Frame):
         self.Taps = wx.StaticText(panel,label="",pos=(150,180))
         self.Theater = wx.StaticText(panel,label="",pos=(150,210),size=(1000,100))
         self.Times = wx.StaticText(panel,label="",pos=(150,240),size=(1000,100))
+        self.URL=wx.StaticText(panel,label="",pos=(150,270))
         self.Bind(wx.EVT_CLOSE,self.OnCloseWin)
         self.Attention=wx.StaticText(panel,label="其他電影院相關時刻即開啟MoiveData.xls可觀看並請留意關閉程式時會將MovieData.xls刪除",pos=(150,400),size=(1000,100))
     def OnCloseWin(self,event):
